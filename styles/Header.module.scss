@@ -1,0 +1,58 @@
+.header{
+  margin-bottom: 30px;
+  padding-block: 10px;
+  background-color: white;
+}
+
+.logo{
+  width: 100px;
+  cursor: pointer;
+}
+
+.popover{
+  cursor: pointer;
+
+  &_body{
+    min-width: 200px;
+    padding-bottom: 12px;
+  }
+
+  &_footer{
+    margin-bottom: -12px;
+    margin-inline: -16px;
+
+    &_btn{
+      width: 100%;
+      font-weight: bold;
+      border-top-right-radius: 0 !important;
+      border-top-left-radius: 0 !important;
+      border: 0 !important;
+
+      &:hover,
+      &:focus{
+        color: white !important;
+        background-color: rgba(var(--color-default-rgb), .8) !important;
+      }
+    }
+  }
+}
+
+.link{
+  color: #333 !important;
+  cursor: pointer;
+
+  &:hover,
+  &:focus{
+    color: var(--color-default) !important;
+  }
+}
+
+.linkLogout{
+  color: var(--color-default) !important;
+
+  &:hover,
+  &:focus{
+    color: var(--color-default-hover) !important;
+  }
+}
+

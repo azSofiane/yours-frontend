@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700');
+
+@import '0-init/normalize.scss';
+@import '0-init/breakpoints.scss';
+@import '0-init/container.scss';
+@import '0-init/display.scss';
+@import '0-init/flex.scss';
+@import '0-init/opacity.scss';
+@import '0-init/position.scss';
+@import '0-init/spacing.scss';
+@import '0-init/text.scss';
+
+:root {
+  --color-default: #3fc0c9;
+  --color-default-text: white;
+  --color-default-hover: #02919E;
+  --color-default-rgb: 63, 189, 201;
+  --color-default-text-rgb: 255, 255, 255;
+  --color-default-hover-rgb: 2, 145, 158;
+  --color-secondary: #0075ff;
+  --color-secondary-text: white;
+  --color-secondary-hover: #3b93fc;
+}
+
+*{
+  box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.yoursapp {
+  padding: 0;
+  margin: 0;
+  font: 400 18px 'Lato', sans-serif;
+  background-color: #f5f7fd;
+
+  img{
+    max-width: 100%;
+  }
+
+  a{
+    color: var(--color-default);
+
+    &:hover,
+    &:focus{
+      color: var(--color-default-hover);
+    }
+  }
+
+
+  .link{
+    &-default{
+      color: var(--color-default) !important;
+
+      &:hover,
+      &:focus{
+        color: var(--color-default-hover) !important;
+      }
+    }
+
+    &-secondary{
+      color: var(--color-secondary) !important;
+
+      &:hover,
+      &:focus{
+        color: var(--color-secondary-hover) !important;
+      }
+    }
+  }
+
+  .w-100{
+    width: 100%;
+  }
+
+  h2{
+    color: var(--color-default);
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  h3{
+    margin-bottom: .25rem;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .fw-normal{
+    font-weight: normal;
+  }
+
+  .fw-bold{
+    font-weight: bold;
+  }
+
+  .fs{
+    &-1{
+      font-size: 2.5rem;
+    }
+
+    &-2{
+      font-size: 2rem;
+    }
+
+    &-3{
+      font-size: 1.75rem;
+    }
+
+    &-4{
+      font-size: 1.5rem;
+    }
+
+    &-5{
+      font-size: 1.25rem;
+    }
+
+    &-6{
+      font-size: 1rem;
+    }
+  }
+
+  .cursor-pointer{
+    cursor: pointer;
+  }
+
+  .vertical-align{
+    &-middle{
+      vertical-align: middle;
+    }
+  }
+
+  .card-profil{
+    &::before{
+      height: 5px;
+      content: '';
+      display: block;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      background-image: linear-gradient(to right, #BC8CFF, #FF7B72);
+    }
+  }
+
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 20px;
+  }
+}
