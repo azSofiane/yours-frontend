@@ -13,7 +13,7 @@ export default function ProfilPage() {
 
   useEffect(() => {
     // Faire une requête au backend pour obtenir les détails de l'annonce en utilisant le slug
-    fetch("https://yours-backend.vercel.app/eleves/02/" + token)
+    fetch("https://yours-backend.vercel.app/eleves/profil/" + token)
       .then((response) => response.json())
       .then((data) => {
         if (data.result) {

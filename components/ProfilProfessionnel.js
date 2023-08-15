@@ -18,7 +18,7 @@ function ProfilProfessionnel() {
 
   useEffect(() => {
     if (user.token) {
-      fetch('https://yours-backend.vercel.app/professionnels/' + user.token)
+      fetch('https://yours-backend.vercel.app/professionnels/token/' + user.token)
         .then(response => response.json())
         .then(data => {
           if(data.result){
