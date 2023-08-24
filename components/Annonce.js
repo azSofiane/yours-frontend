@@ -339,7 +339,7 @@ function Annonce({ id, props }) {
 
 
               {
-                // 2/4 - partie boutons édition, uniquement pour les professionnelles
+                // 2/4 - partie boutons édition, uniquement pour les professionnelles. 
                 user.fonction === 'false' &&
                   <>
                     <Col span={24}>
